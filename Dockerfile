@@ -17,5 +17,5 @@ RUN curl -fsSLO "$SUPERCRONIC_URL" \
  && ln -s "/usr/local/bin/${SUPERCRONIC}" /usr/local/bin/supercronic
 
 ADD crontab /etc/crontab
-USER wodby
+
 CMD ["/usr/local/bin/supercronic"]
