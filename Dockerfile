@@ -18,4 +18,4 @@ RUN curl -fsSLO "$SUPERCRONIC_URL" \
 
 ADD crontab /etc/crontab
 
-CMD ["/usr/local/bin/supercronic"]
+CMD [ "/usr/local/bin/supercronic", "/etc/crontab" 
