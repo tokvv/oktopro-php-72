@@ -1,9 +1,4 @@
-FROM wodby/drupal-php:7.1-2.1.0
-
-USER root
-
-RUN apk add --no-cache --repository http://dl-3.alpinelinux.org/alpine/edge/testing gnu-libiconv
-ENV LD_PRELOAD /usr/lib/preloadable_libiconv.so php
+FROM wodby/drupal-php:7.2
 
 # Install supercronic.
 ENV SUPERCRONIC_URL=https://github.com/aptible/supercronic/releases/download/v0.1.6/supercronic-linux-amd64 \
