@@ -1,1 +1,1 @@
-* * * * * cd /var/www/html/web && drush cron
+*	*	*	*	*	/var/www/html/vendor/bin/drush minter_trader:runTest --root=/var/www/html/web
