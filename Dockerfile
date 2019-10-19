@@ -1,5 +1,7 @@
 FROM wodby/drupal-php:7.2
 
+USER root
+
 # Install supercronic.
 ENV SUPERCRONIC_URL=https://github.com/aptible/supercronic/releases/download/v0.1.6/supercronic-linux-amd64 \
     SUPERCRONIC=supercronic-linux-amd64 \
